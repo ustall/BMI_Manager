@@ -59,9 +59,9 @@ class MainActivity : AppCompatActivity() {
                     bmi < 18.4 -> bmiResultDesc.text = "Mildly underweight"
                     bmi < 24.9 -> bmiResultDesc.text = "Normal weight"
                     bmi < 29.9 -> bmiResultDesc.text = "Overweight"
-                    bmi < 34.9 -> bmiResultDesc.text = "Obesity Class 1 (Moderate)"
-                    bmi < 39.9 -> bmiResultDesc.text = "Obesity Class 2 (Severe)"
-                    else -> bmiResultDesc.text = "Obesity Class 3 (Very Severe)"
+                    bmi < 34.9 -> bmiResultDesc.text = "Obesity Class 1"
+                    bmi < 39.9 -> bmiResultDesc.text = "Obesity Class 2"
+                    else -> bmiResultDesc.text = "Obesity Class 3"
                 }
                 // Hide the keyboard
                 val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             }
         } else {
             // Handle empty input fields
-            bmiResultText.text = "Please enter height and weight"
+            bmiResultText.text = ""
         }
     }
 }
