@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/add_bmi_goal"
                 android:textColor="?attr/colorOnSurface"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_gravity="center"/>
             </LinearLayout>
 
@@ -69,8 +69,34 @@
                     android:layout_margin="10dp"
                     android:text="@string/save_your_measurements"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="20sp" />
-        </LinearLayout>
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/load_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables"
+                android:foreground="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/baseline_upload_file_24"
+                    app:tint="?attr/colorPrimary"
+                    android:contentDescription="@string/add_bmi_goal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="@string/load_previous_measurements"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="18sp" />
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,4 +14,5 @@
     <string name="save_your_measurements">Save your measurements</string>
     <string name="bmi_goal">BMI Goal</string>
     <string name="y_bmi_goal">Your BMI Goal.\nTo hide, long-tap this window.</string>
+    <string name="load_previous_measurements">Load previous measurements</string>
 </resources>

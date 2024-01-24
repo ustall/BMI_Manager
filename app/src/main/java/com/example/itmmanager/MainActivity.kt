@@ -16,6 +16,7 @@ import android.widget.PopupWindow
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var heightEditText: EditText
     private lateinit var weightEditText: EditText
@@ -99,24 +100,19 @@ class MainActivity : AppCompatActivity() {
     private fun morePopUpButton() {
         val moreButton = findViewById<ImageView>(R.id.more_button)
 
+        heightEditText = findViewById(R.id.height_tf)
+        weightEditText = findViewById(R.id.weight_tf)
+        bmiResultText = findViewById(R.id.bmi_result_text)
+        bmiResultDesc = findViewById(R.id.bmi_result_desc)
+        bmiGoalEditText = findViewById(R.id.bmi_goal_field)
+        neededWeightTextView = findViewById(R.id.needed_weight_tv)
+        bmiGoalCV = findViewById(R.id.bmi_goal)
+
         moreButton.setOnClickListener {
             val popupView = LayoutInflater.from(this).inflate(R.layout.more_popup, null)
-            val popupWindow = PopupWindow(
-                popupView,
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                true
-            )
-
-            popupWindow.isTouchable = true
-            popupWindow.isFocusable = true
-
+            val popupWindow = createPopupWindow(popupView)
             val backgroundView = LayoutInflater.from(this).inflate(R.layout.background_tint, null)
-            val backgroundPopupWindow = PopupWindow(
-                backgroundView,
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT
-            )
+            val backgroundPopupWindow = createBackgroundPopupWindow(backgroundView, popupWindow)
 
             backgroundPopupWindow.showAtLocation(backgroundView, 0, 0, 0)
             popupWindow.setOnDismissListener {
@@ -140,10 +136,38 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-
             moreButtonsIdsMap.forEach { it.setOnClickListener(moreButtonsIdsListener) }
         }
     }
+
+    private fun createPopupWindow(contentView: View): PopupWindow {
+        val popupWindow = PopupWindow(
+            contentView,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            true
+        )
+        popupWindow.isTouchable = true
+        popupWindow.isFocusable = true
+        return popupWindow
+    }
+
+    private fun createBackgroundPopupWindow(
+        backgroundView: View,
+        popupWindow: PopupWindow
+    ): PopupWindow {
+        val backgroundPopupWindow = PopupWindow(
+            backgroundView,
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.MATCH_PARENT
+        )
+        backgroundPopupWindow.showAtLocation(backgroundView, 0, 0, 0)
+        backgroundPopupWindow.setOnDismissListener {
+            popupWindow.dismiss()
+        }
+        return backgroundPopupWindow
+    }
+
 
     private fun calculateBMIGoal() {
         val buttonCalculate = findViewById<Button>(R.id.b_calc)
