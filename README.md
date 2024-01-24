@@ -13,19 +13,19 @@ Understanding and monitoring your BMI is crucial for maintaining a healthy lifes
 - [License](#license)
 
 ## Features
-![Test UI](/images/BMISsh.jpg)
 - BMI Calculation: Input your height and weight, and the app will instantly calculate your BMI.
 - Clear Results: The app provides a clear and concise display of the calculated BMI.
 - Interpretation: Receive an interpretation of your BMI, helping you understand where you fall on the BMI scale, from underweight to obese.
-
+## UI Sample
+![Test UI](/images/BMISsh.jpg)
 ## Requirements
 
 To use the BMI Calculator App, users need an Android device running Android OS (SDK version [24] or later).
 
 ## Getting Started
 
-1. Download the App from 
-2. Launch the App: Open the app on your Android device.
+1. Download the App as .apk from Releases page.
+2. Install .apk and launch the App: Open the app on your Android device.
 3. Input Information: Enter your height and weight in the designated fields.
 4. View Results: The app will instantly display your BMI along with an interpretation.
 
