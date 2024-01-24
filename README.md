@@ -33,6 +33,10 @@ To use the BMI Calculator App, users need an Android device running Android OS (
 
 The BMI Calculator App is designed for anyone who wants a quick and easy way to assess their BMI. Whether you are focused on fitness, weight management, or overall health, this app provides a valuable tool for tracking and understanding your body composition.
 
+##To do
+- Implement BMI goals feature
+- Make UI cleaner
+- Implement profile and save features
 ## Contributing
 
 I welcome contributions to enhance and improve the BMI Calculator App
