@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">BMI Manager</string>
     <string name="bmi_manager">BMI Manager</string>
     <string name="weight_kg">Weight, kg</string>
@@ -8,4 +8,10 @@
     <string name="your_height_in_sm">Your height in Sm</string>
     <string name="your_bmi">Your BMI</string>
     <string name="calculate">Calculate</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="add_bmi_goal">Add BMI goal</string>
+    <string name="save_your_measurements">Save your measurements</string>
+    <string name="bmi_goal">BMI Goal</string>
+    <string name="y_bmi_goal">Your BMI Goal.\nTo hide, long-tap this window.</string>
 </resources>
