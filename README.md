@@ -9,6 +9,7 @@ Understanding and monitoring your BMI is crucial for maintaining a healthy lifes
 - [Requirements](#requirements)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
+- [To do](#to-do)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -37,6 +38,7 @@ The BMI Calculator App is designed for anyone who wants a quick and easy way to 
 - Implement BMI goals feature
 - Make UI cleaner
 - Implement profile and save features
+- 
 ## Contributing
 
 I welcome contributions to enhance and improve the BMI Calculator App
