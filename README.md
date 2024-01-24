@@ -13,7 +13,7 @@ Understanding and monitoring your BMI is crucial for maintaining a healthy lifes
 - [License](#license)
 
 ## Features
-![Test UI](,idea/images/BMIscreen.jpg)
+![Test UI](/images/BMIscreen.jpg)
 - BMI Calculation: Input your height and weight, and the app will instantly calculate your BMI.
 - Clear Results: The app provides a clear and concise display of the calculated BMI.
 - Interpretation: Receive an interpretation of your BMI, helping you understand where you fall on the BMI scale, from underweight to obese.
