@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorCardBorder" format="color" />
+    <!-- Diagram-->
+    <attr name="colorDiagramBackground" format="color" />
+    <attr name="colorDiagramStart" format="color" />
+    <attr name="colorDiagramCentre" format="color" />
+    <attr name="colorDiagramEnd" format="color" />
+    <!-- -->
+    <attr name="colorUncheckedMark" format="color" />
+
+</resources>

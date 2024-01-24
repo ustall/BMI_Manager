@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMI Manager</string>
+    <string name="bmi_manager">BMI Manager</string>
+    <string name="weight_kg">Weight, kg</string>
+    <string name="weight">Weight</string>
+    <string name="your_weight_in_kg">Your weight in Kg</string>
+    <string name="height">Height</string>
+    <string name="your_height_in_sm">Your height in Sm</string>
+    <string name="your_bmi">Your BMI</string>
+    <string name="calculate">Calculate</string>
+</resources>
